@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Travel Agency Survey Form</h1>
+<p id="description">Help us impove our services</p>
+<form id="survey-form">
+<fieldset>
+	<label id="name-label">Name: 
+	<input type="text" id="name" placeholder="Enter your name" required />
+	</label>
+	<label id="email-label">Email: 
+	<input type="email" id="email" placeholder="Enter your Email" required />
+	</label>
+	<label id="number-label">Age: 
+	<input type="number" id="number" min="15" max="120" placeholder="Enter your name" required />
+	</label>
+	<label>Which mode of travel did you choose?
+	<select name="slect" id="dropdown">
+	<option value="">Select travel mode</option>
+	<option value="1">Bus Service</option>
+	<option value="2">Train Service</option>
+	<option value="3">Air Travel</option>
+	<option value="4">Personal Transportation</option>
+	</select>
+	</label>
+	</fieldset>
+	<fieldset>
+	<label>How satisfied were you with the level and quality of service surrounding your trip?</label>
+	<label><input type="radio" name="rate-type"
+	value="satisified" class="inline" checked/>Satisfied 
+	</label>
+	<label><input type="radio" name="rate-type"
+	value="kindofs" class="inline" />Kind of Satisfied 
+	</label>
+	<label><input type="radio" name="rate-type"
+	value="neithers" class="inline" />Neither satisfied nor dissatisfied
+	</label>
+	<label><input type="radio" name="rate-type"
+	value="kindofd" class="inline" />Kind of dissatisfied 
+	</label>
+	<label><input type="radio" name="rate-type"
+	value="dissatisfied" class="inline" />Dissatisfied 
+	</label>
+	</fieldset>
+	<fieldset>
+	<label>What places do you prefer travelling the most?</label>
+	<label><input type="checkbox" value="beach" class="inline"/>Beach Areas</label>
+	<label><input type="checkbox" value="natural" class="inline"/>Natural Areas</label>
+	<label><input type="checkbox" value="town" class="inline"/>Towns and Cities</label>
+	<label><input type="checkbox" value="countryside" class="inline"/>Countrysides</label>
+	<label><input type="checkbox" value="winter" class="inline"/>Winter Sport Areas</label>
+	<label><input type="checkbox" value="culture" class="inline"/>Areas Known for Culture and Heritage</label>
+	</fieldset>
+	<fieldset>
+	<label>Any comments or suggestions?
+	<textarea name="comment"
+	rows="3" cols="30"
+	placeholder="Enter your comment here..."></textarea>
+	</label>
+	</fieldset>
+	<input class="button" type="submit" id="submit" />
+</form>
+</body>
+</html>
